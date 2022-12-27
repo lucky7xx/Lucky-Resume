@@ -1,9 +1,10 @@
 import "./App.css";
+import Header from "./Header/Header";
 
 function App() {
   return (
     <div className="App">
-      Hello World this is lucky resume in raect .. testing
+      <Header />
     </div>
   );
 }
