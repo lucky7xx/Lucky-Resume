@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerDiv, InnerDiv } from "./Stylings";
+import { ContainerDiv, InnerDiv } from "../../Style/Stylings";
 
 export const Info = () => {
   return (

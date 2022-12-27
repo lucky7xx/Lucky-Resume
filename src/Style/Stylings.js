@@ -39,4 +39,8 @@ const Links = styled.a`
   }
 `;
 
-export { ContainerDiv, InnerDiv, Links };
+const HomeDiv = styled.div`
+  margin-top: 30px;
+`;
+
+export { ContainerDiv, InnerDiv, Links, HomeDiv };

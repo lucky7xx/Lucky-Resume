@@ -3,7 +3,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Phone } from "@mui/icons-material";
 import HomeIcon from "@mui/icons-material/Home";
-import { ContainerDiv, InnerDiv, Links } from "./Stylings";
+import { ContainerDiv, InnerDiv, Links } from "../../Style/Stylings";
 
 const About = () => {
   return (
