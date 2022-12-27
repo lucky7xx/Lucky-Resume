@@ -5,7 +5,11 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
+  background-color: transparent;
+  background-image: url("https://rare-gallery.com/uploads/posts/4598661-simple-minimalism-gradient.jpg");
+  background-repeat: no-repeat;
+  /* filter: blur(1px); */
+  /* position: absolute; */
 }
 
 code {

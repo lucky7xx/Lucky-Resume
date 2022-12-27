@@ -6,7 +6,6 @@ export const Info = () => {
     <>
       <ContainerDiv>
         <InnerDiv>
-          <h2>Skills</h2>
           <p>
             <span style={{ fontSize: "25px" }}>Frontend</span> :{" "}
             <ul>
@@ -31,6 +30,16 @@ export const Info = () => {
             <span style={{ fontSize: "25px" }}>Server Scripting</span> :{" "}
             <ul>
               <li>Node.js</li>
+            </ul>
+          </p>
+        </InnerDiv>
+        <InnerDiv>
+          {" "}
+          <p>
+            <span style={{ fontSize: "25px" }}>Frameworks </span> :{" "}
+            <ul>
+              <li>React Js</li>
+              <li>Bootstrap 5</li>
             </ul>
           </p>
         </InnerDiv>

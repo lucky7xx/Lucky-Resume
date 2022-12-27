@@ -56,7 +56,7 @@ const About = () => {
               color: "black",
             }}
           />
-          &nbsp; -189, Aashray Vatika,Bakrol.Ajwa Road,Vadodara.390019
+          &nbsp;- 189, Aashray Vatika, Bakrol. Vadodara
         </a>
       </InnerDiv>
     </ContainerDiv>
