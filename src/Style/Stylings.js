@@ -27,6 +27,8 @@ const InnerDiv = styled.div`
   line-height: 25px;
   font-size: 20px;
   text-align: justify;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Links = styled.a`
@@ -50,4 +52,9 @@ const HomepageDiv = styled.div`
   font-size: 20px;
 `;
 
-export { ContainerDiv, InnerDiv, Links, HomeDiv, HomepageDiv };
+const ButtonDiv = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export { ContainerDiv, InnerDiv, Links, HomeDiv, HomepageDiv, ButtonDiv };
