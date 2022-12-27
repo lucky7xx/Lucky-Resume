@@ -6,6 +6,8 @@ import About from "./Components/About";
 import { Info } from "./Components/Info";
 import { School } from "@mui/icons-material";
 import { Schooling } from "./Components/Schooling";
+import CodeIcon from "@mui/icons-material/Code";
+import { Skills } from "./Components/Skills";
 
 const Header = () => {
   return (
@@ -43,12 +45,24 @@ const Header = () => {
             }}
           />
         </Link>
+
+        <Link to="/skills">
+          <CodeIcon
+            color="secondary"
+            sx={{
+              "&:hover": { color: "red" },
+              fontSize: "100px",
+              color: "white",
+            }}
+          />
+        </Link>
       </nav>
-      <h1>hello</h1>
+      <h2>hello</h2>
       <Routes>
         <Route path="about" element={<About />} />
         <Route path="info" element={<Info />} />
         <Route path="schooling" element={<Schooling />} />
+        <Route path="skills" element={<Skills />} />
       </Routes>
     </div>
   );
