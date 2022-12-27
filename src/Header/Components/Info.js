@@ -21,10 +21,16 @@ export const Info = () => {
             </ul>
           </p>
           <p>
-            <span style={{ fontSize: "25px" }}>Client SCripting</span> :{" "}
+            <span style={{ fontSize: "25px" }}>Client Scripting</span> :{" "}
             <ul>
               <li>JQuery</li>
               <li>React</li>
+            </ul>
+          </p>
+          <p>
+            <span style={{ fontSize: "25px" }}>Server Scripting</span> :{" "}
+            <ul>
+              <li>Node.js</li>
             </ul>
           </p>
         </InnerDiv>

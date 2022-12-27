@@ -44,7 +44,7 @@ const Header = () => {
           />
         </Link>
       </nav>
-
+      <h1>hello</h1>
       <Routes>
         <Route path="about" element={<About />} />
         <Route path="info" element={<Info />} />
