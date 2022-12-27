@@ -43,4 +43,11 @@ const HomeDiv = styled.div`
   margin-top: 30px;
 `;
 
-export { ContainerDiv, InnerDiv, Links, HomeDiv };
+const HomepageDiv = styled.div`
+  text-align: justify;
+  margin: 40px 100px;
+  color: white;
+  font-size: 20px;
+`;
+
+export { ContainerDiv, InnerDiv, Links, HomeDiv, HomepageDiv };

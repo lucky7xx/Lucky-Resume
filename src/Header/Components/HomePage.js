@@ -1,28 +1,33 @@
 import React from "react";
+import { HomepageDiv } from "../../Style/Stylings";
 
 export const HomePage = () => {
   return (
-    <div>
+    <HomepageDiv>
       <p>
-        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-        and typesetting industry. Lorem Ipsum has been the industry's standard
-        dummy text ever since the 1500s, when an unknown printer took a galley
-        of type and scrambled it to make a type specimen book. It has survived
-        not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with
-        the release of Letraset sheets containing Lorem Ipsum passages, and more
-        recently with desktop publishing software like Aldus PageMaker including
-        versions of Lorem Ipsum. Why do we use it? It is a long established fact
-        that a reader will be distracted by the readable content of a page when
-        looking at its layout. The point of using Lorem Ipsum is that it has a
-        more-or-less normal distribution of letters, as opposed to using
-        'Content here, content here', making it look like readable English. Many
-        desktop publishing packages and web page editors now use Lorem Ipsum as
-        their default model text, and a search for 'lorem ipsum' will uncover
-        many web sites still in their infancy. Various versions have evolved
-        over the years, sometimes by accident, sometimes on purpose (injected
-        humour and the like).
+        <span style={{ fontSize: "25px", color: "red" }}>Introduction: </span>
+        Hello reviewer! My name is Lucky Patel and I am a react developer
+        fresher. I have recently completed MERN stack development course and i
+        have bachelors degree in Information and technology filed and i have a
+        strong foundation in programming concepts. I am excited to begin my
+        career as a react developer and am eager to learn and grow in this
+        field. I have some experience with react and have built a few small
+        projects on my own, but I am looking forward to learning from more
+        experienced developers and taking on larger and more complex projects.
+        Thank you for considering me for this opportunity.
       </p>
-    </div>
+      <p>
+        <span style={{ fontSize: "25px", color: "red" }}>
+          About This Project:{" "}
+        </span>
+        I have created this whole project using React concepts and implemented
+        some css and javascript too. I have used some react libraries too. I
+        know concepts like Components, JSX, Hooks, Props, Lifecycle Methods,
+        State, Router, Redux, Styled Components, Fetching API , etc. In the
+        project sections i have added few projects which i have done during my
+        course period in weltec institute. <br />
+        Hope you like this small portfolio!
+      </p>
+    </HomepageDiv>
   );
 };
