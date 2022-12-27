@@ -1,9 +1,16 @@
 import React from "react";
 import { ContainerDiv, InnerDiv } from "../../Style/Stylings";
+import { motion } from "framer-motion";
 
 export const Skills = () => {
   return (
-    <ContainerDiv>
+    <ContainerDiv
+      as={motion.div}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      delay={{}}
+    >
       <InnerDiv>
         <p>
           <span style={{ fontSize: "25px" }}>Summary</span> : A graduate with a
