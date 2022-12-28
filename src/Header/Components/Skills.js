@@ -32,6 +32,9 @@ export const Skills = () => {
             <li>Experience with Git and version control.</li>
             <li>A good knowledge of Routers,Redux and other libraries.</li>
             <li>Familiarity with agile development methodologies</li>
+            <li>
+              A good command over of live deployment for testing websites.
+            </li>
           </ul>
         </ParaStyle>
       </InnerDiv>

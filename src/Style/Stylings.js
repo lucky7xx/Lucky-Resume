@@ -3,6 +3,7 @@ import styled from "styled-components";
 const ContainerDiv = styled.div`
   background: rgba(255, 255, 255, 0.5);
   height: auto;
+  font-size: 20px;
   width: 800px;
   border: 1px solid white;
   border-radius: 30px;
@@ -11,8 +12,8 @@ const ContainerDiv = styled.div`
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  background-color: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(1px);
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(3px);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -20,7 +21,6 @@ const ContainerDiv = styled.div`
     width: 380px;
     height: auto;
     display: grid;
-    /* grid-template-rows: repeat(0, 3fr); */
     margin-left: 5px;
   }
 `;
@@ -29,8 +29,8 @@ const InnerDiv = styled.div`
   margin-left: 20px;
   margin-right: 20px;
   text-align: left;
-
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 1.2;
   font-size: 20px;
   text-align: justify;
   justify-content: center;
@@ -38,11 +38,8 @@ const InnerDiv = styled.div`
   @media (min-width: 0px) and (max-width: 480px) {
     text-align: justify;
     font-size: 15px;
-    line-height: 10px;
-    /* margin-top: 10px; */
+    line-height: 1.2;
     margin: 10px;
-    /* margin-left: 10px;
-    margin-right: 10px; */
   }
 `;
 
@@ -75,7 +72,6 @@ const HomeDiv = styled.div`
 
 const HomepageDiv = styled.div`
   text-align: justify;
-  /* margin: 40px 100px; */
   margin-left: 20px;
   margin-right: 20px;
   color: white;
@@ -106,18 +102,21 @@ const NavBar = styled.nav`
 `;
 
 const TitleSpan = styled.span`
-  font-size: 25px;
+  color: ${(props) => (props.color ? "yellow" : "white")};
+  color: ${(props) => (props.style ? "black" : null)};
+  font-size: ${(props) => (props.style ? "20px" : "25px")};
   @media (min-width: 0px) and (max-width: 480px) {
     font-size: 22px;
   }
 `;
 
 const ParaStyle = styled.p`
-  font-size: 15px;
+  font-size: 20px;
+
+  line-height: 1.6;
   @media (min-width: 0px) and (max-width: 480px) {
     font-size: 15px;
     line-height: 20px;
-    text-align: justify;
   }
 `;
 

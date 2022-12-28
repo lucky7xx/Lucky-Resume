@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerDiv, InnerDiv } from "../../Style/Stylings";
+import { ContainerDiv, InnerDiv, TitleSpan } from "../../Style/Stylings";
 import { motion } from "framer-motion";
 
 export const Info = () => {
@@ -13,27 +13,27 @@ export const Info = () => {
       >
         <InnerDiv>
           <p>
-            <span style={{ fontSize: "25px" }}>Frontend</span> :{" "}
+            <TitleSpan>Frontend</TitleSpan> :{" "}
             <ul>
               <li>HTML5</li>
               <li>CSS</li>
             </ul>
           </p>
           <p>
-            <span style={{ fontSize: "25px" }}>Languages</span> :{" "}
+            <TitleSpan>Languages</TitleSpan> :{" "}
             <ul>
               <li>Javascript (ES5 + ES6)</li>
             </ul>
           </p>
           <p>
-            <span style={{ fontSize: "25px" }}>Client Scripting</span> :{" "}
+            <TitleSpan>Client Scripting</TitleSpan> :{" "}
             <ul>
               <li>JQuery</li>
               <li>React</li>
             </ul>
           </p>
           <p>
-            <span style={{ fontSize: "25px" }}>Server Scripting</span> :{" "}
+            <TitleSpan>Server Scripting</TitleSpan> :{" "}
             <ul>
               <li>Node.js</li>
             </ul>
@@ -41,10 +41,11 @@ export const Info = () => {
         </InnerDiv>
         <InnerDiv>
           <p>
-            <span style={{ fontSize: "25px" }}>Frameworks </span> :{" "}
+            <TitleSpan>Frameworks </TitleSpan> :{" "}
             <ul>
               <li>React Js</li>
               <li>Bootstrap 5</li>
+              <li>Tailwind CSS</li>
             </ul>
           </p>
         </InnerDiv>

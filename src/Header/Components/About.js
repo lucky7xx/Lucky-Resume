@@ -64,10 +64,7 @@ const About = () => {
           &nbsp;-/Lucky7xx
         </Links>
         <br />
-        <a
-          href="https://www.google.com/maps/place/Aashray+Vatika/@22.32805,73.2705273,17z/data=!3m1!4b1!4m5!3m4!1s0x395fcfe11aed4c3b:0x820e8dc7eb3bb7d2!8m2!3d22.328052!4d73.2727193"
-          className="linkto"
-        >
+        <Links href="https://www.google.com/maps/place/Aashray+Vatika/@22.32805,73.2705273,17z/data=!3m1!4b1!4m5!3m4!1s0x395fcfe11aed4c3b:0x820e8dc7eb3bb7d2!8m2!3d22.328052!4d73.2727193">
           <IconWrapperDiv fontSize1>
             <HomeIcon
               sx={{
@@ -78,7 +75,7 @@ const About = () => {
             />
           </IconWrapperDiv>
           &nbsp;- 189, Aashray Vatika, Bakrol. Vadodara
-        </a>
+        </Links>
       </InnerDiv>
     </ContainerDiv>
   );

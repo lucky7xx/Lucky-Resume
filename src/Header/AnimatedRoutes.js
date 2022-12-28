@@ -1,6 +1,6 @@
 import React from "react";
-import { Route, useLocation, Routes } from "react-router-dom";
-import { Projects } from "./Components/Projects";
+import { Route, Routes } from "react-router-dom";
+import { Extra } from "./Components/Extra";
 import { HomePage } from "./Components/HomePage";
 import { Skills } from "./Components/Skills";
 import { Schooling } from "./Components/Schooling";
@@ -9,7 +9,6 @@ import { Info } from "./Components/Info";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoutes() {
-  const location = useLocation();
   return (
     <AnimatePresence>
       <Routes>
@@ -18,7 +17,7 @@ function AnimatedRoutes() {
         <Route path="info" element={<Info />} />
         <Route path="schooling" element={<Schooling />} />
         <Route path="skills" element={<Skills />} />
-        <Route path="projects" element={<Projects />} />
+        <Route path="extra" element={<Extra />} />
       </Routes>
     </AnimatePresence>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerDiv, InnerDiv } from "../../Style/Stylings";
+import { ContainerDiv, InnerDiv, TitleSpan } from "../../Style/Stylings";
 import { motion } from "framer-motion";
 
 export const Schooling = () => {
@@ -11,14 +11,17 @@ export const Schooling = () => {
       exit={{ opacity: 0 }}
     >
       <InnerDiv>
-        <h4>Bachelors of Technology</h4>
-        <h4>Parul University,2019</h4>
-        <h5>6.5 CGPA</h5>
+        <TitleSpan>Bachelors of Technology</TitleSpan>
+        <br />
+        <TitleSpan style>Parul University,2019</TitleSpan>
+        <br />
+        <TitleSpan style>6.5 CGPA</TitleSpan>
       </InnerDiv>{" "}
       <hr />
       <InnerDiv>
-        <h4>MERN Stack Development Course</h4>
-        <h4>Weltec Institute Vadodara, 2023</h4>
+        <TitleSpan>MERN Stack Development Course</TitleSpan>
+        <br />
+        <TitleSpan style>Weltec Institute Vadodara, 2023</TitleSpan>
       </InnerDiv>
     </ContainerDiv>
   );

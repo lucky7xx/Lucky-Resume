@@ -1,61 +1,54 @@
 import React from "react";
 import Person4Icon from "@mui/icons-material/Person4";
-import InfoIcon from "@mui/icons-material/Info";
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 import { School } from "@mui/icons-material";
-
 import CodeIcon from "@mui/icons-material/Code";
-
 import LanguageIcon from "@mui/icons-material/Language";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-
 import HomeIcon from "@mui/icons-material/Home";
-import {
-  ContainerDiv,
-  HomeDiv,
-  IconWrapperDiv,
-  NavBar,
-} from "../Style/Stylings";
+import { HomeDiv, IconWrapperDiv, NavBar } from "../Style/Stylings";
 import AnimatedRoutes from "./AnimatedRoutes";
-import { motion } from "framer-motion";
 
 const Header = () => {
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      color: isActive ? "yellow" : "white",
+    };
+  };
+
   return (
     <>
       <div>
         <NavBar>
-          <Link to="/about">
+          <NavLink to="/about" style={navLinkStyles}>
             <IconWrapperDiv>
               {" "}
               <Person4Icon
                 sx={{
                   "&:hover": { color: "red" },
                   size: "2em",
-
                   fontSize: "inherit",
-                  color: "white",
+                  color: "inherit",
                 }}
               />
             </IconWrapperDiv>
-          </Link>
+          </NavLink>
 
-          <Link to="/schooling">
+          <NavLink to="/schooling" style={navLinkStyles}>
             <IconWrapperDiv>
               <School
                 color="secondary"
                 sx={{
                   "&:hover": { color: "red" },
                   size: "2em",
-
                   fontSize: "inherit",
-                  color: "white",
+                  color: "inherit",
                 }}
               />
             </IconWrapperDiv>
-          </Link>
+          </NavLink>
 
-          <Link to="/info">
+          <NavLink to="/info" style={navLinkStyles}>
             <IconWrapperDiv>
               {" "}
               <LanguageIcon
@@ -63,15 +56,14 @@ const Header = () => {
                 sx={{
                   "&:hover": { color: "red" },
                   size: "2em",
-
                   fontSize: "inherit",
-                  color: "white",
+                  color: "inherit",
                 }}
               />
             </IconWrapperDiv>
-          </Link>
+          </NavLink>
 
-          <Link to="/skills">
+          <NavLink to="/skills" style={navLinkStyles}>
             <IconWrapperDiv>
               {" "}
               <CodeIcon
@@ -79,44 +71,42 @@ const Header = () => {
                 sx={{
                   "&:hover": { color: "red" },
                   size: "2em",
-
                   fontSize: "inherit",
-                  color: "white",
+                  color: "inherit",
                 }}
               />{" "}
             </IconWrapperDiv>
-          </Link>
+          </NavLink>
 
-          <Link to="/projects">
+          <NavLink to="/extra" style={navLinkStyles}>
             <IconWrapperDiv>
               <MoreVertIcon
                 color="secondary"
                 sx={{
                   "&:hover": { color: "red" },
                   size: "2em",
-
                   fontSize: "inherit",
-                  color: "white",
+                  color: "inherit",
                 }}
               />{" "}
             </IconWrapperDiv>
-          </Link>
+          </NavLink>
         </NavBar>
 
         <AnimatedRoutes />
       </div>
 
       <HomeDiv>
-        <Link to="/">
+        <NavLink to="/" style={navLinkStyles}>
           <HomeIcon
             color="secondary"
             sx={{
               "&:hover": { color: "gold" },
               fontSize: "30px",
-              color: "white",
+              color: "inherit",
             }}
           />
-        </Link>
+        </NavLink>
       </HomeDiv>
     </>
   );
