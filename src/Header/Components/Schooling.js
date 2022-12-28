@@ -17,10 +17,7 @@ export const Schooling = () => {
       </InnerDiv>{" "}
       <hr />
       <InnerDiv>
-        <h4>
-          MERN Stack Development Course
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </h4>
+        <h4>MERN Stack Development Course</h4>
         <h4>Weltec Institute Vadodara, 2023</h4>
       </InnerDiv>
     </ContainerDiv>

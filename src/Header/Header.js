@@ -11,7 +11,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 import HomeIcon from "@mui/icons-material/Home";
-import { ContainerDiv, HomeDiv } from "../Style/Stylings";
+import { ContainerDiv, HomeDiv, IconWrapperDiv } from "../Style/Stylings";
 import AnimatedRoutes from "./AnimatedRoutes";
 import { motion } from "framer-motion";
 
@@ -21,57 +21,80 @@ const Header = () => {
       <div>
         <nav>
           <Link to="/about">
-            <Person4Icon
-              sx={{
-                "&:hover": { color: "red" },
-                fontSize: "100px",
-                color: "white",
-              }}
-            />
+            <IconWrapperDiv>
+              {" "}
+              <Person4Icon
+                sx={{
+                  "&:hover": { color: "red" },
+                  size: "2em",
+
+                  fontSize: "inherit",
+                  color: "white",
+                }}
+              />
+            </IconWrapperDiv>
           </Link>
 
           <Link to="/schooling">
-            <School
-              color="secondary"
-              sx={{
-                "&:hover": { color: "red" },
-                fontSize: "100px",
-                color: "white",
-              }}
-            />
+            <IconWrapperDiv>
+              <School
+                color="secondary"
+                sx={{
+                  "&:hover": { color: "red" },
+                  size: "2em",
+
+                  fontSize: "inherit",
+                  color: "white",
+                }}
+              />
+            </IconWrapperDiv>
           </Link>
 
           <Link to="/info">
-            <LanguageIcon
-              color="secondary"
-              sx={{
-                "&:hover": { color: "red" },
-                fontSize: "100px",
-                color: "white",
-              }}
-            />
+            <IconWrapperDiv>
+              {" "}
+              <LanguageIcon
+                color="secondary"
+                sx={{
+                  "&:hover": { color: "red" },
+                  size: "2em",
+
+                  fontSize: "inherit",
+                  color: "white",
+                }}
+              />
+            </IconWrapperDiv>
           </Link>
 
           <Link to="/skills">
-            <CodeIcon
-              color="secondary"
-              sx={{
-                "&:hover": { color: "red" },
-                fontSize: "100px",
-                color: "white",
-              }}
-            />
+            <IconWrapperDiv>
+              {" "}
+              <CodeIcon
+                color="secondary"
+                sx={{
+                  "&:hover": { color: "red" },
+                  size: "2em",
+
+                  fontSize: "inherit",
+                  color: "white",
+                }}
+              />{" "}
+            </IconWrapperDiv>
           </Link>
 
           <Link to="/projects">
-            <MoreVertIcon
-              color="secondary"
-              sx={{
-                "&:hover": { color: "red" },
-                fontSize: "100px",
-                color: "white",
-              }}
-            />
+            <IconWrapperDiv>
+              <MoreVertIcon
+                color="secondary"
+                sx={{
+                  "&:hover": { color: "red" },
+                  size: "2em",
+
+                  fontSize: "inherit",
+                  color: "white",
+                }}
+              />{" "}
+            </IconWrapperDiv>
           </Link>
         </nav>
 

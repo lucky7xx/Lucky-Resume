@@ -40,7 +40,6 @@ export const Info = () => {
           </p>
         </InnerDiv>
         <InnerDiv>
-          {" "}
           <p>
             <span style={{ fontSize: "25px" }}>Frameworks </span> :{" "}
             <ul>
