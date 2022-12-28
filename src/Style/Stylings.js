@@ -17,7 +17,7 @@ const ContainerDiv = styled.div`
   backdrop-filter: blur(3px);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  @media (min-width: 0px) and (max-width: 384px) {
+  @media (min-width: 0px) and (max-width: 480px) {
     width: 355px;
     height: auto;
     display: grid;
