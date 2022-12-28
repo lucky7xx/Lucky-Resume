@@ -11,7 +11,12 @@ import LanguageIcon from "@mui/icons-material/Language";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 import HomeIcon from "@mui/icons-material/Home";
-import { ContainerDiv, HomeDiv, IconWrapperDiv } from "../Style/Stylings";
+import {
+  ContainerDiv,
+  HomeDiv,
+  IconWrapperDiv,
+  NavBar,
+} from "../Style/Stylings";
 import AnimatedRoutes from "./AnimatedRoutes";
 import { motion } from "framer-motion";
 
@@ -19,7 +24,7 @@ const Header = () => {
   return (
     <>
       <div>
-        <nav>
+        <NavBar>
           <Link to="/about">
             <IconWrapperDiv>
               {" "}
@@ -96,7 +101,7 @@ const Header = () => {
               />{" "}
             </IconWrapperDiv>
           </Link>
-        </nav>
+        </NavBar>
 
         <AnimatedRoutes />
       </div>

@@ -1,4 +1,3 @@
-import { style } from "@mui/system";
 import styled from "styled-components";
 
 const ContainerDiv = styled.div`
@@ -21,7 +20,7 @@ const ContainerDiv = styled.div`
     width: 380px;
     height: auto;
     display: grid;
-    grid-template-rows: repeat(1, 3fr);
+    /* grid-template-rows: repeat(0, 3fr); */
     margin-left: 5px;
   }
 `;
@@ -30,20 +29,20 @@ const InnerDiv = styled.div`
   margin-left: 20px;
   margin-right: 20px;
   text-align: left;
-  margin-top: 10px;
-  line-height: 25px;
+
+  line-height: 20px;
   font-size: 20px;
   text-align: justify;
   justify-content: center;
   align-items: center;
   @media (min-width: 0px) and (max-width: 480px) {
     text-align: justify;
-    font-size: 10px;
-    line-height: 12px;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    font-size: 15px;
+    line-height: 10px;
+    /* margin-top: 10px; */
+    margin: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
   }
 `;
 
@@ -94,15 +93,36 @@ const ButtonDiv = styled.div`
 `;
 
 const IconWrapperDiv = styled.div`
-  font-size: 80px;
+  font-size: ${(props) => (props.fontSize1 ? "30px" : "80px")};
   display: inline-flex;
   flex-direction: row;
   @media (min-width: 0px) and (max-width: 480px) {
-    font-size: 40px;
+    font-size: ${(props) => (props.fontSize1 ? "20px" : "40px")};
+  }
+`;
+
+const NavBar = styled.nav`
+  margin-top: 20px;
+`;
+
+const TitleSpan = styled.span`
+  font-size: 25px;
+  @media (min-width: 0px) and (max-width: 480px) {
+    font-size: 22px;
+  }
+`;
+
+const ParaStyle = styled.p`
+  font-size: 15px;
+  @media (min-width: 0px) and (max-width: 480px) {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
   }
 `;
 
 export {
+  NavBar,
   ContainerDiv,
   InnerDiv,
   Links,
@@ -111,4 +131,6 @@ export {
   ButtonDiv,
   ImgDiv,
   IconWrapperDiv,
+  TitleSpan,
+  ParaStyle,
 };

@@ -9,6 +9,7 @@ export const HomePage = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      luckybhai
     >
       <p>
         <span style={{ fontSize: "25px", color: "red" }}>Introduction: </span>

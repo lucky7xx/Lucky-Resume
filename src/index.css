@@ -7,9 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: transparent;
   background-image: url("https://rare-gallery.com/uploads/posts/4598661-simple-minimalism-gradient.jpg");
-  background-repeat: no-repeat;
-  /* filter: blur(1px); */
-  /* position: absolute; */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  /* background-size: cover; */
 }
 
 code {
