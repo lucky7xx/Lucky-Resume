@@ -3,7 +3,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Phone } from "@mui/icons-material";
 import HomeIcon from "@mui/icons-material/Home";
-import { ContainerDiv, InnerDiv, Links } from "../../Style/Stylings";
+import { ContainerDiv, ImgDiv, InnerDiv, Links } from "../../Style/Stylings";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -14,7 +14,7 @@ const About = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <img src="/123.jpg" className="headImg" alt="headimage"></img>
+      <ImgDiv src="/123.jpg" alt="headimage"></ImgDiv>
       <InnerDiv>
         Name: Lucky Patel
         <br />
