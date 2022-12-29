@@ -20,6 +20,19 @@ const Header = () => {
     <>
       <div>
         <NavBar>
+          <NavLink to="/" style={navLinkStyles}>
+            <IconWrapperDiv>
+              <HomeIcon
+                sx={{
+                  "&:hover": { color: "red" },
+                  size: "2em",
+                  fontSize: "inherit",
+                  color: "inherit",
+                }}
+              />
+            </IconWrapperDiv>
+          </NavLink>
+
           <NavLink to="/about" style={navLinkStyles}>
             <IconWrapperDiv>
               {" "}
@@ -95,19 +108,6 @@ const Header = () => {
 
         <AnimatedRoutes />
       </div>
-
-      <HomeDiv>
-        <NavLink to="/" style={navLinkStyles}>
-          <HomeIcon
-            color="secondary"
-            sx={{
-              "&:hover": { color: "gold" },
-              fontSize: "30px",
-              color: "inherit",
-            }}
-          />
-        </NavLink>
-      </HomeDiv>
     </>
   );
 };

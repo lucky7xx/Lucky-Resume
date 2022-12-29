@@ -43,7 +43,6 @@ export const Info = () => {
           <p>
             <TitleSpan>Frameworks </TitleSpan> :{" "}
             <ul>
-              <li>React Js</li>
               <li>Bootstrap 5</li>
               <li>Tailwind CSS</li>
             </ul>
