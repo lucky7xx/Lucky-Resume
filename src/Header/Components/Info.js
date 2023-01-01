@@ -1,6 +1,7 @@
 import React from "react";
 import { ContainerDiv, InnerDiv, TitleSpan } from "../../Style/Stylings";
 import { motion } from "framer-motion";
+import { Tooltip } from "@mui/material";
 
 export const Info = () => {
   return (
@@ -15,8 +16,16 @@ export const Info = () => {
           <p>
             <TitleSpan>Frontend</TitleSpan> :{" "}
             <ul>
-              <li>HTML5</li>
-              <li>CSS</li>
+              <Tooltip
+                title="Basic Understanding of HTML layout and tags."
+                arrow
+                bootstrap
+              >
+                <li>HTML5</li>
+              </Tooltip>
+              <Tooltip title="Basic Understanding of CSS  styles." arrow>
+                <li style={{ cursor: "pointer" }}>CSS</li>
+              </Tooltip>
             </ul>
           </p>
           <p>
@@ -29,7 +38,9 @@ export const Info = () => {
             <TitleSpan>Client Scripting</TitleSpan> :{" "}
             <ul>
               <li>JQuery</li>
-              <li>React</li>
+              <Tooltip title="React components,props, memo, States, Hooks, Styled Components,Router, Fetching API,">
+                <li>React</li>
+              </Tooltip>
             </ul>
           </p>
           <p>

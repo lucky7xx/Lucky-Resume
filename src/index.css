@@ -58,3 +58,7 @@ span {
   font-size: 64px;
   border-radius: 20px;
 }
+
+li {
+  cursor: pointer;
+}

@@ -104,6 +104,7 @@ const NavBar = styled.nav`
 const TitleSpan = styled.span`
   color: ${(props) => (props.color ? "yellow" : "white")};
   color: ${(props) => (props.style ? "black" : null)};
+  color: ${(props) => (props.errorColor ? "#800808" : null)};
   font-size: ${(props) => (props.style ? "20px" : "25px")};
   @media (min-width: 0px) and (max-width: 480px) {
     font-size: 22px;

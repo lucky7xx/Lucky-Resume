@@ -6,7 +6,8 @@ import CodeIcon from "@mui/icons-material/Code";
 import LanguageIcon from "@mui/icons-material/Language";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import HomeIcon from "@mui/icons-material/Home";
-import { HomeDiv, IconWrapperDiv, NavBar } from "../Style/Stylings";
+import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
+import { IconWrapperDiv, NavBar } from "../Style/Stylings";
 import AnimatedRoutes from "./AnimatedRoutes";
 
 const Header = () => {
@@ -80,6 +81,20 @@ const Header = () => {
             <IconWrapperDiv>
               {" "}
               <CodeIcon
+                color="secondary"
+                sx={{
+                  "&:hover": { color: "red" },
+                  size: "2em",
+                  fontSize: "inherit",
+                  color: "inherit",
+                }}
+              />{" "}
+            </IconWrapperDiv>
+          </NavLink>
+
+          <NavLink to="/projects" style={navLinkStyles}>
+            <IconWrapperDiv>
+              <WorkOutlineIcon
                 color="secondary"
                 sx={{
                   "&:hover": { color: "red" },
